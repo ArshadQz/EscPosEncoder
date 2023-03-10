@@ -1,47 +1,77 @@
 {
-  "name": "esc-pos-encoder",
-  "version": "2.0.0",
-  "description": "Create a set of commands that can be send to any receipt printer that supports ESC/POS",
-  "main": "src/esc-pos-encoder.js",
-  "scripts": {
-    "bundle": "browserify src/esc-pos-encoder.js --standalone EscPosEncoder -o dist/esc-pos-encoder.js",
-    "uglify": "uglifyjs dist/esc-pos-encoder.js -cm --overwrite -o dist/esc-pos-encoder.js",
-    "build": "npm run bundle && npm run uglify",
-    "lint": "eslint --fix src/esc-pos-encoder.js",
-    "mocha": "mocha test/",
-    "test": "npm run lint && npm run mocha"
+  "_from": "esc-pos-encoder-qzone-custom",
+  "_id": "esc-pos-encoder-qzone-custom@1.1.5",
+  "_inBundle": false,
+  "_integrity": "sha512-uFbTaUruvA5Y6HFsjScxDo+GBqPXKidnMgP3+VMBSV1ehzKhbiwqdnp6Q71HvfU36cXrbAXucwutLCsg06Sqkw==",
+  "_location": "/esc-pos-encoder-qzone-custom",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "esc-pos-encoder-qzone-custom",
+    "name": "esc-pos-encoder-qzone-custom",
+    "escapedName": "esc-pos-encoder-qzone-custom",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/NielsLeenheer/EscPosEncoder.git"
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/esc-pos-encoder-qzone-custom/-/esc-pos-encoder-qzone-custom-1.1.5.tgz",
+  "_shasum": "f32afe3e85bd01cb54f7d815ba82396de5c1ebb8",
+  "_spec": "esc-pos-encoder-qzone-custom",
+  "_where": "/Users/arshad/Documents/Work/Git/TIMBRE_MERC",
+  "author": {
+    "name": "Anson Tio"
   },
+  "bugs": {
+    "url": "https://github.com/Ans0n-Ti0/EscPosEncoder/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "buffer-to-uint8array": "^1.1.0",
+    "canvas": "^2.6.1",
+    "canvas-dither": "^1.0.0",
+    "canvas-flatten": "^1.0.0",
+    "iconv-lite": "^0.4.19",
+    "linewrap": "^0.2.1"
+  },
+  "deprecated": false,
+  "description": "Create a set of commands that can be send to any receipt printer that supports ESC/POS. Support Ionic (Typescript)",
+  "devDependencies": {
+    "browserify": "^16.5.0",
+    "chai": "^4.2.0",
+    "eslint": "^4.19.1",
+    "eslint-config-google": "^0.9.1",
+    "mocha": "^4.1.0",
+    "uglify-es": "^3.3.9"
+  },
+  "homepage": "https://github.com/Ans0n-Ti0/EscPosEncoder#readme",
   "keywords": [
     "pos",
     "escpos",
     "receipt",
-    "printer"
+    "printer",
+    "ionic",
+    "ionic4",
+    "ionic5"
   ],
-  "author": "Niels Leenheer",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/NielsLeenheer/EscPosEncoder/issues"
+  "main": "src/esc-pos-encoder.js",
+  "name": "esc-pos-encoder-qzone-custom",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ans0n-Ti0/EscPosEncoder.git"
   },
-  "homepage": "https://github.com/NielsLeenheer/EscPosEncoder#readme",
-  "devDependencies": {
-    "browserify": "^17.0.0",
-    "buffer-to-uint8array": "^1.1.0",
-    "chai": "^4.3.4",
-    "eslint": "^7.31.0",
-    "eslint-config-google": "^0.14.0",
-    "iconv-lite": "^0.6.3",
-    "mocha": "^9.0.2",
-    "uglify-es": "^3.3.9"
+  "scripts": {
+    "build": "npm run bundle && npm run uglify",
+    "bundle": "browserify src/esc-pos-encoder.js --standalone EscPosEncoder -o dist/esc-pos-encoder.js",
+    "lint": "eslint --fix src/esc-pos-encoder.js",
+    "mocha": "mocha test/",
+    "test": "npm run lint && npm run mocha",
+    "uglify": "uglifyjs dist/esc-pos-encoder.js -cm --overwrite -o dist/esc-pos-encoder.js"
   },
-  "dependencies": {
-    "canvas": "^2.8.0",
-    "canvas-dither": "^1.0.1",
-    "canvas-flatten": "^1.0.1",
-    "codepage-encoder": "^1.0.0",
-    "linewrap": "^0.2.1"
-  }
+  "version": "1.1.5"
 }
