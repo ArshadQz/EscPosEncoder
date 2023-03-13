@@ -1,6 +1,6 @@
 {
   "_from": "esc-pos-encoder-qzone-custom",
-  "_id": "esc-pos-encoder-qzone-custom@1.1.5",
+  "_id": "esc-pos-encoder-qzone-custom@1.1.6",
   "_inBundle": false,
   "_integrity": "sha512-uFbTaUruvA5Y6HFsjScxDo+GBqPXKidnMgP3+VMBSV1ehzKhbiwqdnp6Q71HvfU36cXrbAXucwutLCsg06Sqkw==",
   "_location": "/esc-pos-encoder-qzone-custom",
@@ -19,7 +19,7 @@
     "#USER",
     "/"
   ],
-  "_resolved": "https://registry.npmjs.org/esc-pos-encoder-qzone-custom/-/esc-pos-encoder-qzone-custom-1.1.5.tgz",
+  "_resolved": "https://registry.npmjs.org/esc-pos-encoder-qzone-custom/-/esc-pos-encoder-qzone-custom-1.1.6.tgz",
   "_shasum": "f32afe3e85bd01cb54f7d815ba82396de5c1ebb8",
   "_spec": "esc-pos-encoder-qzone-custom",
   "_where": "/Users/arshad/Documents/Work/Git/TIMBRE_MERC",
@@ -73,5 +73,5 @@
     "test": "npm run lint && npm run mocha",
     "uglify": "uglifyjs dist/esc-pos-encoder.js -cm --overwrite -o dist/esc-pos-encoder.js"
   },
-  "version": "1.1.5"
+  "version": "1.1.6"
 }

@@ -272,14 +272,28 @@ class EscPosEncoder {
    *
    */
   customSize(value) {
-    if (value === 'normal') {
-      value = [0x1b, 0x21, 0x03];
-    } else if (value === 'bold') {
-      value = [0x1b, 0x21, 0x08];
-    } else if (value === 'boldMedium') {
-      value = [0x1b, 0x21, 0x20];
-    } else if (value === 'boldLarge') {
-      value = [0x1b, 0x21, 0x10];
+    // THIS ARE PRINTING MODES
+    // if (value === 'normal') {
+    //     value = [0x1B, 0x21, 0x03];
+    // } else if(value === 'bold'){
+    //     value = [0x1B, 0x21, 0x08];
+    // }else if(value === 'boldMedium'){
+    //     value = [0x1B, 0x21, 0x20];
+    // }else if(value === 'boldLarge'){
+
+    //     value = [0x1B, 0x21, 0x10];
+
+    // }
+    if (value === 'medium') {
+      value = [0x1b, 0x21, 0x18];
+    } else if (value === 'justWidth') {
+      value = [0x1b, 0x21, 0x28];
+    } else if (value === 'large') {
+      value = [0x1b, 0x21, 0x30];
+    } else if (value === 'veryLarge') {
+      value = [0x1b, 0x21, 0x38];
+    } else if (value === 'normal') {
+      value = [0x1b, 0x21, 0x00];
     }
 
     this._queue(value);
